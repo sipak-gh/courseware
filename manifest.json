@@ -1,0 +1,2128 @@
+{
+  "generated": "2026-11-02T17:31:12Z",
+  "org": "sipak-gh",
+  "branch": "master",
+  "topics": [
+    {
+      "id": "systems",
+      "title": "Systems & Low-Level",
+      "blurb": "Close to the metal: C, assembly, Zig and the raw operating-system APIs."
+    },
+    {
+      "id": "languages",
+      "title": "Languages & Scripting",
+      "blurb": "General-purpose and scripting languages, each taught by building one real tool."
+    },
+    {
+      "id": "web",
+      "title": "Web",
+      "blurb": "Typed JavaScript and building interfaces for the browser."
+    },
+    {
+      "id": "tools",
+      "title": "Tools & Workflow",
+      "blurb": "The command line and version control every project runs on."
+    },
+    {
+      "id": "craft",
+      "title": "Building Software",
+      "blurb": "How to plan, structure and finish projects bigger than an exercise."
+    },
+    {
+      "id": "philosophy",
+      "title": "Philosophy",
+      "blurb": "The big questions, from a broad survey to ethics, Stoicism and nihilism."
+    }
+  ],
+  "courses": [
+    {
+      "repo": "learn-c",
+      "title": "Learn C by Building a Chat Server",
+      "summary": "This course teaches the C language from first principles, and then the Linux systems programming that real C programs are made of: files and descriptors, signals, sockets, threads, event loops and terminals. In it you build parley, a small IRC-style chat with one room. It has two parts:",
+      "language": "C",
+      "accent": "#6a737d",
+      "topic": "systems",
+      "order": 0,
+      "chapterCount": 22,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn C by Building a Chat Server",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — Getting Started",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-types-and-operators.md",
+          "title": "Chapter 2 — Types and Operators",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-control-flow.md",
+          "title": "Chapter 3 — Control Flow",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-functions.md",
+          "title": "Chapter 4 — Functions",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-pointers-and-arrays.md",
+          "title": "Chapter 5 — Pointers and Arrays",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-strings.md",
+          "title": "Chapter 6 — Strings",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-structs-unions-enums.md",
+          "title": "Chapter 7 — Structs, Unions and Enums",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-memory.md",
+          "title": "Chapter 8 — Memory",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-preprocessor-and-building.md",
+          "title": "Chapter 9 — The Preprocessor and Building",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-errors-and-debugging.md",
+          "title": "Chapter 10 — Errors and Debugging",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-testing.md",
+          "title": "Chapter 11 — Testing",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-files-and-descriptors.md",
+          "title": "Chapter 12 — Files and File Descriptors",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-processes-and-signals.md",
+          "title": "Chapter 13 — Processes and Signals",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-networking-basics.md",
+          "title": "Chapter 14 — Networking Basics",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-a-first-server.md",
+          "title": "Chapter 15 — A First Server",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-a-first-client.md",
+          "title": "Chapter 16 — A First Client",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-threads.md",
+          "title": "Chapter 17 — Threads",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-event-loop.md",
+          "title": "Chapter 18 — The Event Loop",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-an-interactive-client.md",
+          "title": "Chapter 19 — An Interactive Client",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-terminal-ui.md",
+          "title": "Chapter 20 — A Terminal User Interface",
+          "kind": "chapter"
+        },
+        {
+          "file": "21-robustness.md",
+          "title": "Chapter 21 — Robustness",
+          "kind": "chapter"
+        },
+        {
+          "file": "22-shipping-and-libc-choices.md",
+          "title": "Chapter 22 — Shipping, and Choosing a C Library",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-c99-cheatsheet.md",
+          "title": "Appendix A — C99 Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-glibc-vs-musl.md",
+          "title": "Appendix B — glibc vs musl",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-parley-protocol.md",
+          "title": "Appendix C — The parley Protocol",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-d-posix-sockets-reference.md",
+          "title": "Appendix D — POSIX Sockets Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-linux-nasm",
+      "title": "Learn x86-64 Assembly with NASM and Linux Syscalls",
+      "summary": "This course teaches you to write real programs in x86-64 assembly. You use only NASM and the Linux kernel: no C, no libc, no helper libraries. It focuses on writing assembly that stays maintainable as it grows, which means conventions, file organization, macros, testing, and the habits that let…",
+      "language": "Assembly",
+      "accent": "#b07219",
+      "topic": "systems",
+      "order": 1,
+      "chapterCount": 22,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn x86-64 Assembly with NASM and Linux Syscalls",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — Getting Started",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-machine-model.md",
+          "title": "Chapter 2 — The Machine Model",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-arithmetic-and-flags.md",
+          "title": "Chapter 3 — Arithmetic and Flags",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-control-flow.md",
+          "title": "Chapter 4 — Control Flow",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-stack-and-functions.md",
+          "title": "Chapter 5 — The Stack and Functions",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-linux-syscalls.md",
+          "title": "Chapter 6 — Linux Syscalls",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-strings-and-numbers.md",
+          "title": "Chapter 7 — Strings and Numbers",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-debugging.md",
+          "title": "Chapter 8 — Debugging",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-macros.md",
+          "title": "Chapter 9 — Macros",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-project-organization.md",
+          "title": "Chapter 10 — Project Organization",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-maintainable-assembly.md",
+          "title": "Chapter 11 — Maintainable Assembly",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-lessons-from-the-pros.md",
+          "title": "Chapter 12 — Lessons from the Pros",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-memory.md",
+          "title": "Chapter 13 — Memory",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-data-structures.md",
+          "title": "Chapter 14 — Data Structures",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-advent-of-code.md",
+          "title": "Chapter 15 — Advent of Code",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-bits-simd-speed.md",
+          "title": "Chapter 16 — Bits, SIMD, and Speed",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-x11-from-scratch.md",
+          "title": "Chapter 17 — X11 from Scratch",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-x11-tic-tac-toe.md",
+          "title": "Chapter 18 — Tic-Tac-Toe on X11",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-game-boy-cpu.md",
+          "title": "Chapter 19 — A Game Boy CPU in NASM Macros",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-game-boy-graphics-input.md",
+          "title": "Chapter 20 — Game Boy Graphics and Input",
+          "kind": "chapter"
+        },
+        {
+          "file": "21-game-boy-tic-tac-toe.md",
+          "title": "Chapter 21 — Tic-Tac-Toe on the Game Boy",
+          "kind": "chapter"
+        },
+        {
+          "file": "22-where-next.md",
+          "title": "Chapter 22 — Where to Go Next",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-x86-64-reference.md",
+          "title": "Appendix A — x86-64 Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-nasm-reference.md",
+          "title": "Appendix B — NASM Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-sm83-reference.md",
+          "title": "Appendix C — SM83 Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-zig",
+      "title": "Learn Zig by Building `seek`",
+      "summary": "This course teaches Zig from first principles while you build one real program: seek, a small, fast, concurrent command-line search tool in the spirit of grep.",
+      "language": "Zig",
+      "accent": "#f7a41d",
+      "topic": "systems",
+      "order": 2,
+      "chapterCount": 20,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Zig by Building `seek`",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — Getting Started",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-values-and-types.md",
+          "title": "Chapter 2 — Values, Types, and Variables",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-control-flow.md",
+          "title": "Chapter 3 — Control Flow",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-functions.md",
+          "title": "Chapter 4 — Functions",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-errors-and-optionals.md",
+          "title": "Chapter 5 — Errors and Optionals",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-arrays-slices-pointers.md",
+          "title": "Chapter 6 — Arrays, Slices, and Pointers",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-structs-enums-unions.md",
+          "title": "Chapter 7 — Structs, Enums, and Unions",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-memory-and-allocators.md",
+          "title": "Chapter 8 — Memory and Allocators",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-strings-and-formatting.md",
+          "title": "Chapter 9 — Strings, Text, and Formatting",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-containers.md",
+          "title": "Chapter 10 — Standard Library Containers",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-files-and-io.md",
+          "title": "Chapter 11 — Files, Directories, and I/O",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-comptime.md",
+          "title": "Chapter 12 — Comptime",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-generics.md",
+          "title": "Chapter 13 — Generic Programming",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-polymorphism.md",
+          "title": "Chapter 14 — Interfaces and Polymorphism",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-concurrency.md",
+          "title": "Chapter 15 — Concurrency",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-testing.md",
+          "title": "Chapter 16 — Testing",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-json.md",
+          "title": "Chapter 17 — JSON and Data Serialization",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-build-system.md",
+          "title": "Chapter 18 — The Build System",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-low-level.md",
+          "title": "Chapter 19 — Safety, Undefined Behavior, and Talking to C",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-design-and-next-steps.md",
+          "title": "Chapter 20 — Zig's Design Ideals, Idioms, and Next Steps",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-cheatsheet.md",
+          "title": "Appendix A — Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-project-reference.md",
+          "title": "Appendix B — Project Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-zig-win32gui",
+      "title": "Learn Win32 GUI Programming in Zig by Building Minesweeper",
+      "summary": "This course teaches native Windows GUI programming with the raw Win32 API, written in Zig and cross-compiled from Linux under WSL. You'll build one real program along the way: mines, a faithful clone of the classic Windows Minesweeper.",
+      "language": "Zig",
+      "accent": "#f7a41d",
+      "topic": "systems",
+      "order": 3,
+      "chapterCount": 20,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Win32 GUI Programming in Zig by Building Minesweeper",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — Getting Started: Cross-Compiling for Windows from WSL",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-dlls-and-linking.md",
+          "title": "Chapter 2 — Talking to Windows: DLLs, Import Libraries, and build.zig",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-types-strings-errors.md",
+          "title": "Chapter 3 — Win32 Types, UTF-16 Strings, and Errors",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-first-window.md",
+          "title": "Chapter 4 — Your First Window",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-messages-and-state.md",
+          "title": "Chapter 5 — Messages and Window State",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-game-logic.md",
+          "title": "Chapter 6 — Game Logic in Plain Zig",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-gdi-painting.md",
+          "title": "Chapter 7 — Painting with GDI",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-mouse-input.md",
+          "title": "Chapter 8 — Mouse Input",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-text-and-fonts.md",
+          "title": "Chapter 9 — Text and Fonts",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-timers.md",
+          "title": "Chapter 10 — Timers and the Smiley Face",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-double-buffering.md",
+          "title": "Chapter 11 — Double Buffering and Bitmaps",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-resources.md",
+          "title": "Chapter 12 — Resources: Icons, Version Info, and Manifests",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-menus-and-accelerators.md",
+          "title": "Chapter 13 — Menus and Keyboard Accelerators",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-dialogs.md",
+          "title": "Chapter 14 — Dialog Boxes",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-common-controls.md",
+          "title": "Chapter 15 — Common Controls and Common Dialogs",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-persistence.md",
+          "title": "Chapter 16 — Saving Settings and Best Times in the Registry",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-keyboard-and-focus.md",
+          "title": "Chapter 17 — Keyboard Input and Focus",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-high-dpi.md",
+          "title": "Chapter 18 — High DPI",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-debugging-and-testing.md",
+          "title": "Chapter 19 — Debugging and Testing a GUI App",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-shipping.md",
+          "title": "Chapter 20 — Shipping, Other Targets, and Win32's Design Ideals",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-win32-cheatsheet.md",
+          "title": "Appendix A — Win32 Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-translating-c-declarations.md",
+          "title": "Appendix B — Translating Win32 C Declarations to Zig",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-mines-reference.md",
+          "title": "Appendix C — `mines` Project Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-go",
+      "title": "Learn Go by Building `seek`",
+      "summary": "This course teaches Go from first principles. Along the way you build one real program:",
+      "language": "Go",
+      "accent": "#00add8",
+      "topic": "languages",
+      "order": 4,
+      "chapterCount": 20,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Go by Building `seek`",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — Getting Started",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-values-and-types.md",
+          "title": "Chapter 2 — Variables, Constants, and Basic Types",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-control-flow.md",
+          "title": "Chapter 3 — Control Flow",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-functions.md",
+          "title": "Chapter 4 — Functions, Closures, and Defer",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-collections.md",
+          "title": "Chapter 5 — Arrays, Slices, and Maps",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-strings.md",
+          "title": "Chapter 6 — Strings, Bytes, and Runes",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-structs-methods-pointers.md",
+          "title": "Chapter 7 — Structs, Methods, and Pointers",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-packages-and-modules.md",
+          "title": "Chapter 8 — Packages, Modules, and Project Layout",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-errors.md",
+          "title": "Chapter 9 — Error Handling",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-interfaces.md",
+          "title": "Chapter 10 — Interfaces",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-io-and-files.md",
+          "title": "Chapter 11 — Readers, Writers, and the File System",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-flags.md",
+          "title": "Chapter 12 — Command-Line Flags and Configuration",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-generics.md",
+          "title": "Chapter 13 — Generics",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-iterators.md",
+          "title": "Chapter 14 — Iterators and Range-over-Func",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-json-and-encoding.md",
+          "title": "Chapter 15 — Encoding: JSON and Struct Tags",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-goroutines-and-channels.md",
+          "title": "Chapter 16 — Goroutines and Channels",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-sync.md",
+          "title": "Chapter 17 — Synchronization and the Memory Model",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-context-and-time.md",
+          "title": "Chapter 18 — Context, Cancellation, Time, and Signals",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-testing.md",
+          "title": "Chapter 19 — Testing, Benchmarks, and Fuzzing",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-tooling-and-design.md",
+          "title": "Chapter 20 — Shipping It: Tooling, Embedding, and Go's Design Ideals",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-cheatsheet.md",
+          "title": "Appendix A — Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-project-reference.md",
+          "title": "Appendix B — Project Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-lua",
+      "title": "Learn Lua (LuaJIT) by Building `stash`",
+      "summary": "This course teaches Lua from first principles, using LuaJIT. Then it shows Lua's superpower: a small scripting language, built around one flexible data structure (the table), with direct access to the huge world of C libraries through LuaJIT's FFI.",
+      "language": "Lua",
+      "accent": "#5b5fc7",
+      "topic": "languages",
+      "order": 5,
+      "chapterCount": 21,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Lua (LuaJIT) by Building `stash`",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — Getting Started",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-values-and-types.md",
+          "title": "Chapter 2 — Values and Types",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-control-flow.md",
+          "title": "Chapter 3 — Control Flow",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-functions.md",
+          "title": "Chapter 4 — Functions",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-tables.md",
+          "title": "Chapter 5 — Tables",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-strings.md",
+          "title": "Chapter 6 — Strings and Patterns",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-metatables-and-objects.md",
+          "title": "Chapter 7 — Metatables and Objects",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-modules.md",
+          "title": "Chapter 8 — Modules",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-errors.md",
+          "title": "Chapter 9 — Errors",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-testing.md",
+          "title": "Chapter 10 — Testing",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-coroutines.md",
+          "title": "Chapter 11 — Coroutines",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-io-and-os.md",
+          "title": "Chapter 12 — I/O and the OS",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-ffi-basics.md",
+          "title": "Chapter 13 — FFI Basics",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-c-data.md",
+          "title": "Chapter 14 — C Data",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-wrapping-sqlite.md",
+          "title": "Chapter 15 — Wrapping SQLite",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-callbacks-and-curl.md",
+          "title": "Chapter 16 — Callbacks and libcurl",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-binary-data-and-zlib.md",
+          "title": "Chapter 17 — Binary Data and zlib",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-performance-and-the-jit.md",
+          "title": "Chapter 18 — Performance and the JIT",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-plugins-and-scripting.md",
+          "title": "Chapter 19 — Plugins and Scripting",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-embedding-luajit.md",
+          "title": "Chapter 20 — Embedding LuaJIT",
+          "kind": "chapter"
+        },
+        {
+          "file": "21-design-and-next-steps.md",
+          "title": "Chapter 21 — Design and Next Steps",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-cheatsheet.md",
+          "title": "Appendix A — Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-ffi-reference.md",
+          "title": "Appendix B — FFI Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-lua-versions.md",
+          "title": "Appendix C — Lua Versions",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-python-ctf",
+      "title": "Learn Python for CTFs",
+      "summary": "This course teaches practical Python for Capture-the-Flag competitions while you build one real thing: ctfkit, a small, readable toolkit you grow one module per chapter and then use to solve",
+      "language": "Python",
+      "accent": "#3572a5",
+      "topic": "languages",
+      "order": 6,
+      "chapterCount": 12,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Python for CTFs",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — The CTF Mindset and Your Toolbox",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-python-for-ctf-data.md",
+          "title": "Chapter 2 — Python for CTF: Bytes, Numbers, and Encodings",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-talking-to-services.md",
+          "title": "Chapter 3 — Talking to Services and Automating",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-classical-and-xor.md",
+          "title": "Chapter 4 — Classical Ciphers and XOR",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-rsa.md",
+          "title": "Chapter 5 — RSA from Scratch and Classic Attacks",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-attacking-randomness.md",
+          "title": "Chapter 6 — Predicting \"Random\" Numbers",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-python-reversing.md",
+          "title": "Chapter 7 — Reversing Python: Bytecode, `.pyc`, and Obfuscation",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-pyjail.md",
+          "title": "Chapter 8 — Pyjails: Escaping Python Sandboxes",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-web.md",
+          "title": "Chapter 9 — Web: Flask, SSTI, and Pickle Deserialization",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-forensics.md",
+          "title": "Chapter 10 — Forensics: File Formats, PCAPs, and Stego",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-pwn.md",
+          "title": "Chapter 11 — Binary Exploitation with Python and pwntools",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-methodology-and-next.md",
+          "title": "Chapter 12 — Putting It Together: Method, Writeups, and Where Next",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-python-ctf-cheatsheet.md",
+          "title": "Appendix A — Python-for-CTF Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-pwntools-reference.md",
+          "title": "Appendix B — pwntools Quick Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-ctfkit-reference.md",
+          "title": "Appendix C — `ctfkit` API Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-d-running-challenges.md",
+          "title": "Appendix D — Fetching and Running Challenges Locally",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-typescript-crashcourse",
+      "title": "TypeScript Crash Course",
+      "summary": "A compact, hands-on course on TypeScript 7. You'll learn the type system from basic annotations to generics, conditional and mapped types, as well as modules, declaration files, async code, typing untrusted data and the tooling around it. Every chapter is a set of short examples that you type out,…",
+      "language": "TypeScript",
+      "accent": "#3178c6",
+      "topic": "web",
+      "order": 7,
+      "chapterCount": 12,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "TypeScript Crash Course",
+          "kind": "readme"
+        },
+        {
+          "file": "01-setup.md",
+          "title": "Chapter 1 — Setting Up",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-basic-types.md",
+          "title": "Chapter 2 — Basic Types",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-functions.md",
+          "title": "Chapter 3 — Functions",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-objects-and-interfaces.md",
+          "title": "Chapter 4 — Objects and Interfaces",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-unions-and-narrowing.md",
+          "title": "Chapter 5 — Unions and Narrowing",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-classes.md",
+          "title": "Chapter 6 — Classes, Enums and Decorators",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-generics.md",
+          "title": "Chapter 7 — Generics",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-type-manipulation.md",
+          "title": "Chapter 8 — Type Manipulation",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-modules-and-declarations.md",
+          "title": "Chapter 9 — Modules and Declaration Files",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-async-iterators-and-resources.md",
+          "title": "Chapter 10 — Async, Iterators and Resources",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-working-with-javascript-and-data.md",
+          "title": "Chapter 11 — Working with JavaScript and Untrusted Data",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-tooling-and-next-steps.md",
+          "title": "Chapter 12 — Tooling and Next Steps",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-cheatsheet.md",
+          "title": "Appendix A — Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-tsconfig-reference.md",
+          "title": "Appendix B — tsconfig Reference",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-react",
+      "title": "Learn React by Building Five Dice: A Course for Web Developers",
+      "summary": "A hands-on React course for web developers who know HTML, CSS and the DOM but haven't used React. You start from the vanilla DOM code you already write, see where it breaks down, and learn React's core APIs and mental models one chapter at a time, always compared with how you'd do it by hand. Along…",
+      "language": "React",
+      "accent": "#61dafb",
+      "topic": "web",
+      "order": 8,
+      "chapterCount": 20,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn React by Building Five Dice: A Course for Web Developers",
+          "kind": "readme"
+        },
+        {
+          "file": "01-getting-started.md",
+          "title": "Chapter 1 — Getting Started",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-from-vanilla-dom-to-react.md",
+          "title": "Chapter 2 — From Vanilla DOM to React",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-javascript-for-react.md",
+          "title": "Chapter 3 — The JavaScript React Depends On",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-components-and-jsx.md",
+          "title": "Chapter 4 — Components and JSX",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-state-and-events.md",
+          "title": "Chapter 5 — State and Events",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-thinking-in-react.md",
+          "title": "Chapter 6 — Thinking in React",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-reducers.md",
+          "title": "Chapter 7 — Reducers",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-testing.md",
+          "title": "Chapter 8 — Testing",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-forms.md",
+          "title": "Chapter 9 — Forms",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-composition-and-context.md",
+          "title": "Chapter 10 — Composition and Context",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-effects.md",
+          "title": "Chapter 11 — Effects",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-refs-and-the-dom.md",
+          "title": "Chapter 12 — Refs and the DOM",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-custom-hooks.md",
+          "title": "Chapter 13 — Custom Hooks",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-styling.md",
+          "title": "Chapter 14 — Styling",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-accessibility.md",
+          "title": "Chapter 15 — Accessibility",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-rendering-and-performance.md",
+          "title": "Chapter 16 — Rendering and Performance",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-async-react.md",
+          "title": "Chapter 17 — Async React",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-portals-and-dialogs.md",
+          "title": "Chapter 18 — Portals and Dialogs",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-building-and-shipping.md",
+          "title": "Chapter 19 — Building and Shipping",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-where-next.md",
+          "title": "Chapter 20 — Where Next",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-react-cheatsheet.md",
+          "title": "Appendix A — React Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-web-platform-reference.md",
+          "title": "Appendix B — Web Platform Beyond the Basics",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-five-dice-rules.md",
+          "title": "Appendix C — Five Dice Rules",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-web-frameworks",
+      "title": "Learn Web Frameworks: A Survey Course for Web Developers",
+      "summary": "A hands-on survey of the JavaScript web frameworks in use today, for developers who know HTML, CSS, the DOM and some TypeScript. Instead of teaching one framework in depth, the course shows what makes each one different: its mental model, how its code is structured, how its reactivity works, what…",
+      "language": "JavaScript",
+      "accent": "#f0db4f",
+      "topic": "web",
+      "order": 9,
+      "chapterCount": 20,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Web Frameworks: A Survey Course for Web Developers",
+          "kind": "readme"
+        },
+        {
+          "file": "01-the-landscape.md",
+          "title": "Chapter 1 — The Landscape",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-a-short-history.md",
+          "title": "Chapter 2 — A Short History",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-the-problem-frameworks-solve.md",
+          "title": "Chapter 3 — The Problem Frameworks Solve",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-react.md",
+          "title": "Chapter 4 — React",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-vue.md",
+          "title": "Chapter 5 — Vue",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-svelte.md",
+          "title": "Chapter 6 — Svelte",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-angular.md",
+          "title": "Chapter 7 — Angular",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-solid.md",
+          "title": "Chapter 8 — Solid",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-preact.md",
+          "title": "Chapter 9 — Preact",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-mithril-and-the-minimalists.md",
+          "title": "Chapter 10 — Mithril and the Minimalists",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-qwik.md",
+          "title": "Chapter 11 — Qwik",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-lit-and-web-components.md",
+          "title": "Chapter 12 — Lit and Web Components",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-htmx.md",
+          "title": "Chapter 13 — htmx",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-alpine.md",
+          "title": "Chapter 14 — Alpine.js",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-reactivity-compared.md",
+          "title": "Chapter 15 — Reactivity Compared",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-state-routing-and-data.md",
+          "title": "Chapter 16 — State, Routing and Data",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-build-tools.md",
+          "title": "Chapter 17 — Build Tools",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-meta-frameworks-and-rendering.md",
+          "title": "Chapter 18 — Meta-Frameworks and Rendering",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-comparing-frameworks.md",
+          "title": "Chapter 19 — Comparing Frameworks",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-choosing-a-framework.md",
+          "title": "Chapter 20 — Choosing a Framework",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-rosetta-stone.md",
+          "title": "Appendix A — Rosetta Stone",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-glossary.md",
+          "title": "Appendix B — Glossary",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-tasklet-spec.md",
+          "title": "Appendix C — Tasklet Specification",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-gnu-utils",
+      "title": "GNU Utils Crash Course",
+      "summary": "A compact, hands-on course on the command-line tools that come preinstalled on a GNU/Linux system: the GNU coreutils (ls, cp, sort, cut, date, ...) plus the essential text and file tools around them (grep, find, xargs, diff, patch, sed, awk). Every chapter is a set of short examples you type and…",
+      "language": "Shell",
+      "accent": "#89e051",
+      "topic": "tools",
+      "order": 10,
+      "chapterCount": 10,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "GNU Utils Crash Course",
+          "kind": "readme"
+        },
+        {
+          "file": "01-shell-basics.md",
+          "title": "Chapter 1 — How the Tools Fit Together",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-files-and-directories.md",
+          "title": "Chapter 2 — Files and Directories",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-viewing-text.md",
+          "title": "Chapter 3 — Viewing Text",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-slicing-and-sorting.md",
+          "title": "Chapter 4 — Slicing and Sorting",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-searching.md",
+          "title": "Chapter 5 — Searching",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-comparing-and-patching.md",
+          "title": "Chapter 6 — Comparing and Patching",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-sed.md",
+          "title": "Chapter 7 — sed",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-awk.md",
+          "title": "Chapter 8 — awk",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-system-and-process-tools.md",
+          "title": "Chapter 9 — System and Process Tools",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-putting-it-together.md",
+          "title": "Chapter 10 — Putting It Together",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-cheatsheet.md",
+          "title": "Appendix A — Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-git",
+      "title": "Learn Git: From the Everyday Loop to the Object Database",
+      "summary": "This course teaches Git in two steps. Chapters 1–3 cover the basics briefly: the loop you use every day, branches, merges and remotes. Chapters 4–14 then dig into how everything works: objects, the index, references, revisions, diffs and merges, history rewriting, packfiles, transports, submodules…",
+      "language": "Git",
+      "accent": "#f05032",
+      "topic": "tools",
+      "order": 11,
+      "chapterCount": 18,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Git: From the Everyday Loop to the Object Database",
+          "kind": "readme"
+        },
+        {
+          "file": "01-mental-model-and-setup.md",
+          "title": "Chapter 1 — Mental Model and Setup",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-the-everyday-loop.md",
+          "title": "Chapter 2 — The Everyday Loop",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-branches-merging-remotes-brief.md",
+          "title": "Chapter 3 — Branches, Merging and Remotes in Brief",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-the-object-database.md",
+          "title": "Chapter 4 — The Object Database",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-the-index.md",
+          "title": "Chapter 5 — The Index",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-references-and-head.md",
+          "title": "Chapter 6 — References and HEAD",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-revisions-and-ranges.md",
+          "title": "Chapter 7 — Revisions and Ranges",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-reading-and-searching-history.md",
+          "title": "Chapter 8 — Reading and Searching History",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-diff-and-merge-internals.md",
+          "title": "Chapter 9 — Diff Internals and Merge Mechanics",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-rewriting-history.md",
+          "title": "Chapter 10 — Rewriting History",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-stash-worktrees-and-cleaning.md",
+          "title": "Chapter 11 — Stash, Worktrees and Cleaning",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-remotes-in-depth.md",
+          "title": "Chapter 12 — Remotes in Depth",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-transport-and-packfiles.md",
+          "title": "Chapter 13 — Transport and Packfiles",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-submodules-subtrees-large-repos.md",
+          "title": "Chapter 14 — Submodules, Subtrees and Large Repos",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-hooks-attributes-and-config.md",
+          "title": "Chapter 15 — Hooks, Attributes and Config",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-collaboration-and-patches.md",
+          "title": "Chapter 16 — Collaboration and Patches",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-debugging-and-recovery.md",
+          "title": "Chapter 17 — Debugging and Recovery",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-mini-git-and-where-next.md",
+          "title": "Chapter 18 — Mini-Git and Where Next",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-cheatsheet.md",
+          "title": "Appendix A — Cheat Sheet",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-plumbing-and-file-formats.md",
+          "title": "Appendix B — Plumbing and File Formats",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-project-development",
+      "title": "Project Development Notes",
+      "summary": "Step-by-step guide to building software larger than Advent of Code: torrent clients, vi-like editors, interpreters, databases.",
+      "language": "Guide",
+      "accent": "#8a63d2",
+      "topic": "craft",
+      "order": 12,
+      "chapterCount": 6,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Project Development Notes",
+          "kind": "readme"
+        },
+        {
+          "file": "00-diagnosis.md",
+          "title": "00. Diagnosis: Is It the Domain or the Structure?",
+          "kind": "chapter"
+        },
+        {
+          "file": "01-process.md",
+          "title": "01. The Process",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-design-techniques.md",
+          "title": "02. Design Techniques for Big Programs",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-testing-and-debugging.md",
+          "title": "03. Testing and Debugging Big Programs",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-resources.md",
+          "title": "04. Resources",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-framework-to-systems-mindset.md",
+          "title": "05. From Framework Developer to Systems Thinker",
+          "kind": "chapter"
+        }
+      ]
+    },
+    {
+      "repo": "learn-philosophy",
+      "title": "Learn Philosophy: From Thales to Today",
+      "summary": "Philosophy is the habit of asking what everyone else takes for granted. What is real? How do you know? What do you owe other people? Is the self you call \"I\" one thing or many? Can a life go well or badly in a way that has nothing to do with how it feels? You already hold answers to these…",
+      "language": "Philosophy",
+      "accent": "#c9a227",
+      "topic": "philosophy",
+      "order": 13,
+      "chapterCount": 24,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Philosophy: From Thales to Today",
+          "kind": "readme"
+        },
+        {
+          "file": "01-what-is-philosophy.md",
+          "title": "Chapter 1 — What Is Philosophy?",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-logic-and-argument.md",
+          "title": "Chapter 2 — Logic and Argument",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-the-presocratics.md",
+          "title": "Chapter 3 — The Presocratics",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-socrates-and-the-sophists.md",
+          "title": "Chapter 4 — Socrates and the Sophists",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-plato.md",
+          "title": "Chapter 5 — Plato",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-aristotle.md",
+          "title": "Chapter 6 — Aristotle",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-hellenistic-philosophy.md",
+          "title": "Chapter 7 — Hellenistic Philosophy",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-classical-india-and-china.md",
+          "title": "Chapter 8 — Classical India and China",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-faith-and-reason.md",
+          "title": "Chapter 9 — Faith and Reason",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-renaissance-and-the-new-science.md",
+          "title": "Chapter 10 — The Renaissance and the New Science",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-descartes-and-the-rationalists.md",
+          "title": "Chapter 11 — Descartes and the Rationalists",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-the-empiricists.md",
+          "title": "Chapter 12 — The Empiricists",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-kant.md",
+          "title": "Chapter 13 — Kant",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-hegel-marx-and-their-critics.md",
+          "title": "Chapter 14 — Hegel, Marx, and Their Critics",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-nietzsche.md",
+          "title": "Chapter 15 — Nietzsche",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-utilitarianism-and-liberalism.md",
+          "title": "Chapter 16 — Utilitarianism and Liberalism",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-pragmatism.md",
+          "title": "Chapter 17 — Pragmatism",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-the-analytic-turn.md",
+          "title": "Chapter 18 — The Analytic Turn",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-phenomenology-and-existentialism.md",
+          "title": "Chapter 19 — Phenomenology and Existentialism",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-philosophy-of-mind.md",
+          "title": "Chapter 20 — Philosophy of Mind",
+          "kind": "chapter"
+        },
+        {
+          "file": "21-knowledge-and-science.md",
+          "title": "Chapter 21 — Knowledge and Science",
+          "kind": "chapter"
+        },
+        {
+          "file": "22-political-philosophy.md",
+          "title": "Chapter 22 — Political Philosophy",
+          "kind": "chapter"
+        },
+        {
+          "file": "23-continental-philosophy-today.md",
+          "title": "Chapter 23 — Continental Philosophy Today",
+          "kind": "chapter"
+        },
+        {
+          "file": "24-building-a-philosophy-of-life.md",
+          "title": "Chapter 24 — Building a Philosophy of Life",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-glossary.md",
+          "title": "Appendix A — Glossary",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-timeline.md",
+          "title": "Appendix B — Timeline",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-reading-list.md",
+          "title": "Appendix C — Reading List",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-ethics",
+      "title": "Learn Ethics: From Socrates and Confucius to Building Your Own",
+      "summary": "Ethics is the part of philosophy you cannot opt out of. You already have answers to its questions: whether you may lie to spare a friend, how much you owe a stranger, whether a pig's suffering counts the same as yours, what you would do if you could never be caught. The only choice is whether to…",
+      "language": "Philosophy",
+      "accent": "#2e8b57",
+      "topic": "philosophy",
+      "order": 14,
+      "chapterCount": 22,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Ethics: From Socrates and Confucius to Building Your Own",
+          "kind": "readme"
+        },
+        {
+          "file": "01-what-is-ethics.md",
+          "title": "Chapter 1 — What Is Ethics?",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-moral-reasoning.md",
+          "title": "Chapter 2 — Moral Reasoning",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-relativism-and-egoism.md",
+          "title": "Chapter 3 — Relativism and Egoism",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-divine-command-and-natural-law.md",
+          "title": "Chapter 4 — Divine Command and Natural Law",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-ancient-virtue-ethics.md",
+          "title": "Chapter 5 — Ancient Virtue Ethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-hellenistic-ethics.md",
+          "title": "Chapter 6 — Hellenistic Ethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-confucian-buddhist-and-other-traditions.md",
+          "title": "Chapter 7 — Confucian, Buddhist, and Other Traditions",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-hume-and-the-sentimentalists.md",
+          "title": "Chapter 8 — Hume and the Sentimentalists",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-kant.md",
+          "title": "Chapter 9 — Kant: Duty, Dignity, and the Moral Law",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-classical-utilitarianism.md",
+          "title": "Chapter 10 — Classical Utilitarianism: Bentham, Mill, Sidgwick",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-contemporary-consequentialism.md",
+          "title": "Chapter 11 — Contemporary Consequentialism",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-contractualism-and-justice.md",
+          "title": "Chapter 12 — Contractualism and Justice",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-the-virtue-ethics-revival.md",
+          "title": "Chapter 13 — The Virtue Ethics Revival",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-care-and-feminist-ethics.md",
+          "title": "Chapter 14 — Care and Feminist Ethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-nietzsche-and-the-critique-of-morality.md",
+          "title": "Chapter 15 — Nietzsche and the Critique of Morality",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-existentialist-ethics.md",
+          "title": "Chapter 16 — Existentialist Ethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "17-metaethics.md",
+          "title": "Chapter 17 — Metaethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "18-moral-psychology-and-responsibility.md",
+          "title": "Chapter 18 — Moral Psychology and Responsibility",
+          "kind": "chapter"
+        },
+        {
+          "file": "19-bioethics.md",
+          "title": "Chapter 19 — Bioethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "20-animals-and-the-environment.md",
+          "title": "Chapter 20 — Animals and the Environment",
+          "kind": "chapter"
+        },
+        {
+          "file": "21-technology-and-ai-ethics.md",
+          "title": "Chapter 21 — Technology and AI Ethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "22-building-your-ethics.md",
+          "title": "Chapter 22 — Building Your Ethics",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-glossary.md",
+          "title": "Appendix A — Glossary",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-timeline.md",
+          "title": "Appendix B — Timeline",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-reading-list.md",
+          "title": "Appendix C — Reading List",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-stoicism",
+      "title": "Learn Stoicism: From the Painted Porch to the Modern Practice",
+      "summary": "Stoicism is the philosophy of the person who has lost something and has to decide what to do next. It began around 300 BCE, when a shipwrecked merchant named Zeno started teaching in a painted colonnade in Athens, and it lasted five centuries as a full philosophical system: a physics of a living,…",
+      "language": "Philosophy",
+      "accent": "#b5653a",
+      "topic": "philosophy",
+      "order": 15,
+      "chapterCount": 16,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Stoicism: From the Painted Porch to the Modern Practice",
+          "kind": "readme"
+        },
+        {
+          "file": "01-why-stoicism.md",
+          "title": "Chapter 1 — Why Stoicism?",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-before-the-stoa.md",
+          "title": "Chapter 2 — Before the Stoa",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-the-early-stoa.md",
+          "title": "Chapter 3 — The Early Stoa",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-stoic-physics.md",
+          "title": "Chapter 4 — Stoic Physics",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-logic-and-knowledge.md",
+          "title": "Chapter 5 — Logic and Knowledge",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-virtue-and-the-good.md",
+          "title": "Chapter 6 — Virtue and the Good",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-the-passions.md",
+          "title": "Chapter 7 — The Passions",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-the-middle-stoa-and-rome.md",
+          "title": "Chapter 8 — The Middle Stoa and Rome",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-seneca.md",
+          "title": "Chapter 9 — Seneca",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-epictetus.md",
+          "title": "Chapter 10 — Epictetus",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-marcus-aurelius.md",
+          "title": "Chapter 11 — Marcus Aurelius",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-stoic-practices.md",
+          "title": "Chapter 12 — Stoic Practices",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-critics-and-the-end-of-the-school.md",
+          "title": "Chapter 13 — Critics and the End of the School",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-stoicism-through-the-ages.md",
+          "title": "Chapter 14 — Stoicism Through the Ages",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-modern-stoicism.md",
+          "title": "Chapter 15 — Modern Stoicism",
+          "kind": "chapter"
+        },
+        {
+          "file": "16-living-a-stoic-life.md",
+          "title": "Chapter 16 — Living a Stoic Life",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-glossary.md",
+          "title": "Appendix A — Glossary",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-timeline.md",
+          "title": "Appendix B — Timeline",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-reading-list.md",
+          "title": "Appendix C — Reading List",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    },
+    {
+      "repo": "learn-nihilism",
+      "title": "Learn Nihilism: From Ecclesiastes to the Absurd and Beyond",
+      "summary": "Nihilism is the suspicion that nothing really matters: that life has no given meaning, that morality has no foundation, that the universe neither knows nor cares that we are here. Most people meet it as a mood, at three in the morning or in a philosophy class, and try to get away from it as fast as…",
+      "language": "Philosophy",
+      "accent": "#8e8e9e",
+      "topic": "philosophy",
+      "order": 16,
+      "chapterCount": 15,
+      "chapters": [
+        {
+          "file": "README.md",
+          "title": "Learn Nihilism: From Ecclesiastes to the Absurd and Beyond",
+          "kind": "readme"
+        },
+        {
+          "file": "01-what-is-nihilism.md",
+          "title": "Chapter 1 — What Is Nihilism?",
+          "kind": "chapter"
+        },
+        {
+          "file": "02-ancient-roots.md",
+          "title": "Chapter 2 — Ancient Roots",
+          "kind": "chapter"
+        },
+        {
+          "file": "03-the-word-and-its-birth.md",
+          "title": "Chapter 3 — The Word and Its Birth",
+          "kind": "chapter"
+        },
+        {
+          "file": "04-russian-nihilism.md",
+          "title": "Chapter 4 — Russian Nihilism",
+          "kind": "chapter"
+        },
+        {
+          "file": "05-schopenhauer-and-pessimism.md",
+          "title": "Chapter 5 — Schopenhauer and Pessimism",
+          "kind": "chapter"
+        },
+        {
+          "file": "06-nietzsche-the-death-of-god.md",
+          "title": "Chapter 6 — Nietzsche: The Death of God",
+          "kind": "chapter"
+        },
+        {
+          "file": "07-nietzsche-beyond-nihilism.md",
+          "title": "Chapter 7 — Nietzsche Beyond Nihilism",
+          "kind": "chapter"
+        },
+        {
+          "file": "08-kierkegaard-and-despair.md",
+          "title": "Chapter 8 — Kierkegaard and Despair",
+          "kind": "chapter"
+        },
+        {
+          "file": "09-heidegger-and-the-nothing.md",
+          "title": "Chapter 9 — Heidegger and the Nothing",
+          "kind": "chapter"
+        },
+        {
+          "file": "10-camus-and-the-absurd.md",
+          "title": "Chapter 10 — Camus and the Absurd",
+          "kind": "chapter"
+        },
+        {
+          "file": "11-sartre-and-beauvoir.md",
+          "title": "Chapter 11 — Sartre and Beauvoir",
+          "kind": "chapter"
+        },
+        {
+          "file": "12-moral-nihilism-and-error-theory.md",
+          "title": "Chapter 12 — Moral Nihilism and Error Theory",
+          "kind": "chapter"
+        },
+        {
+          "file": "13-pessimism-and-antinatalism.md",
+          "title": "Chapter 13 — Pessimism and Antinatalism",
+          "kind": "chapter"
+        },
+        {
+          "file": "14-nihilism-in-modern-culture.md",
+          "title": "Chapter 14 — Nihilism in Modern Culture",
+          "kind": "chapter"
+        },
+        {
+          "file": "15-beyond-nihilism.md",
+          "title": "Chapter 15 — Beyond Nihilism",
+          "kind": "chapter"
+        },
+        {
+          "file": "appendix-a-glossary.md",
+          "title": "Appendix A — Glossary",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-b-timeline.md",
+          "title": "Appendix B — Timeline",
+          "kind": "appendix"
+        },
+        {
+          "file": "appendix-c-reading-list.md",
+          "title": "Appendix C — Reading List",
+          "kind": "appendix"
+        },
+        {
+          "file": "REFERENCES.md",
+          "title": "References",
+          "kind": "references"
+        }
+      ]
+    }
+  ]
+}
