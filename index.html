@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sipak · courseware</title>
+<meta name="description" content="A reading interface for the sipak-gh learn-* course collection.">
+<link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github.min.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">
+    <span class="brand-mark">▞</span>
+    <span class="brand-text">sipak <span class="brand-sep">/</span> courseware</span>
+  </a>
+  <nav class="topnav">
+    <select id="course-switcher" aria-label="Jump to course"></select>
+    <a class="gh-link" id="source-link" href="#" target="_blank" rel="noopener" title="View the source on GitHub">GitHub ↗</a>
+  </nav>
+</header>
+
+<div id="layout">
+  <aside id="sidebar" class="sidebar" hidden>
+    <div class="sidebar-head">
+      <a id="sidebar-course" class="sidebar-course" href="#/"></a>
+      <span id="sidebar-lang" class="pill"></span>
+    </div>
+    <nav id="toc" class="toc" aria-label="Chapters"></nav>
+  </aside>
+
+  <main id="view" class="view">
+    <div class="loading">Loading…</div>
+  </main>
+</div>
+
+<script>window.__cwLibs = { marked: false, hljs: false };</script>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"
+        onload="window.__cwLibs.marked=true"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"
+        onload="window.__cwLibs.hljs=true"></script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
