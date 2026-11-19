@@ -1,0 +1,71 @@
+name: Update manifest
+
+# Refreshes manifest.json from the latest content of the learn-* course repos.
+# Runs weekly, and on demand via the "Run workflow" button.
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # Mondays, 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-manifest
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout courseware
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Shallow-clone the learn-* course repos
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          set -euo pipefail
+          dest="${RUNNER_TEMP}/courses"
+          mkdir -p "$dest"
+
+          # Discover public, non-archived learn-* repos in the account. Works
+          # whether the owner is an org or a user; falls back to whatever the
+          # committed manifest already lists.
+          filter='.[] | select(.private == false and (.archived | not)) | .name'
+          repos="$(gh api --paginate "/orgs/${OWNER}/repos" -q "$filter" 2>/dev/null | grep '^learn-' || true)"
+          if [ -z "$repos" ]; then
+            repos="$(gh api --paginate "/users/${OWNER}/repos" -q "$filter" 2>/dev/null | grep '^learn-' || true)"
+          fi
+          if [ -z "$repos" ]; then
+            echo "API discovery returned nothing; falling back to manifest.json"
+            repos="$(jq -r '.courses[].repo' manifest.json)"
+          fi
+
+          echo "Repos to refresh:"; echo "$repos"
+          for r in $repos; do
+            git clone --depth 1 "https://github.com/${OWNER}/${r}.git" "$dest/$r"
+          done
+          echo "SCAN_DIR=$dest" >> "$GITHUB_ENV"
+
+      - name: Regenerate manifest
+        run: python3 gen_manifest.py "$SCAN_DIR"
+
+      - name: Commit if changed
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- manifest.json; then
+            echo "manifest.json is unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git commit -m "chore: update manifest ($(date -u +%Y-%m-%d))"
+          git push
